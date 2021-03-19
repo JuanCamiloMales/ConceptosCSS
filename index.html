@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Conceptos CSS3">
+		<meta name="keywords" content="HTML5, CSS3">
+		<title>Conceptos CSS3</title>
+		<link rel="stylesheet" href="css/style-css3.css">
+
+        <!-- Insertar fuentes desde API google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+        <div id="group-elements">
+            <header id="header-title">
+            <h1>Este es el título principal del sitio web</h1>
+            <span id="span-title">Estilos CSS3</span>
+            </header>
+            <nav id="menu">
+                <ul>
+                    <li>principal</li>
+                    <li>fotos</li>
+                    <li>videos</li>
+                    <li>contacto</li>
+                </ul>
+            </nav>
+            
+            <section id="Investigacion">
+
+                <article class="Unidades-medida">
+                    <header>
+                        <h1>Unidades de medida</h1>
+                    </header>
+                    <div class="Unidades-absolutas">
+                        <h2>Unidades absolutas</h2>
+                        <p>Como su nombre lo indica, son unidades que están completamente definidas. Esto quiere decir que su valor no depende de otro valor de referencia. En este grupo encontramos los siguientes elementos:</p>
+                        <ul>
+                            <li>
+                                <span class="Item">cm:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto o elemento en centímetros</span>
+                            </li>
+                            <li>
+                                <span class="Item">mm:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto o elemento en milímetros</span>
+                            </li>
+                            <li>
+                                <span class="Item">in:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto o elemento en pulgadas (1in = 96px = 2.54cm)</span>
+                            </li>
+                            <li>
+                                <span class="Item">px:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto en pixeles (Dependiendo del dispositivo, este elemento se clasifica también en Unidades Relativas)</span>
+                            </li>
+                            <li>
+                                <span class="Item">pt:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto en puntos (1pt = 1/72 de 1in)</span>
+                            </li>
+                            <li>
+                                <span class="Item">pc:</span>
+                                <span class="Descripcion">Aumenta el tamaño de nuestro texto en picas (1pc = 12 puntos aprox)</span>
+                            </li>
+                        </ul>
+                        <h4>Ejemplos</h4>
+                        <ul>
+                            <li>
+                                <svg class="Ejemplo Ejemplo1" viewBox="0 0 3 2">
+                                    <rect width="1" height="2" x="0" fill="#008d46" />
+                                    <rect width="1" height="2" x="1" fill="#ffffff" />
+                                    <rect width="1" height="2" x="2" fill="#d2232c" />
+                                </svg>
+                                <figcaption>Bandera italiana de ancho 2cm</figcaption>
+                            </li>
+                            <li>
+                                <svg class="Ejemplo Ejemplo2" viewBox="0 0 3 2">
+                                    <rect width="1" height="2" x="0" fill="#008d46" />
+                                    <rect width="1" height="2" x="1" fill="#ffffff" />
+                                    <rect width="1" height="2" x="2" fill="#d2232c" />
+                                </svg>
+                                <figcaption>Bandera italiana de ancho 75px</figcaption>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Unidades-relativas">
+                        <h2>Unidades relativas</h2>
+                        <p>Al contrario que las unidades absolutas, las unidades relativas dependen de algún otro factor (resolución, densidad de pantalla, etc...). Son las ideales para trabajar en dispositivos con diferentes tamaños, ya que son muy flexibles y versátiles:</p>
+                        <div class="Unidades-relativas-tipografia">
+                            <h4>Relativas a la tipografía</h4>
+                            <ul>
+                                <li>
+                                    <span class="Item">ex:</span>
+                                    <span class="Descripcion">también conocida como x-height. Está definida por la altura del carácter x, en minúsculas, con la tipografía y tamaño del contexto.</span>
+                                </li>
+                                <li>
+                                    <span class="Item">em:</span>
+                                    <span class="Descripcion"> la unidad em es equivalente al tamaño de fuente del elemento base, o del padre.</span>
+                                </li>
+                                <li>
+                                    <span class="Item">rem:</span>
+                                    <span class="Descripcion">es similar a em, pero en este caso el valor siempre es el mismo, ya que parte del tamaño de la tipografía del elemento root (que es el elemento html).</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Unidades-relativas-tipografia">
+                            <h4>Relativas al viewport (pantalla)</h4>
+                            <ul>
+                                <li>
+                                    <span class="Item">vh:</span>
+                                    <span class="Descripcion"> viewport height. Corresponde al alto de la pantalla. 1vh equivale a un 1% de la altura.</span>
+                                </li>
+                                <li>
+                                    <span class="Item">vw:</span>
+                                    <span class="Descripcion"> viewport width. Es similar al anterior, solo que en este caso se basa en la anchura de la pantalla. 1vw equivale al 1% del ancho.</span>
+                                </li>
+                                <li>
+                                    <span class="Item">vmin:</span>
+                                    <span class="Descripcion">vmin: viewport minimum. Equivale al 1% del valor mínimo del alto y ancho de la pantalla.</span>
+                                </li>
+                                <li>
+                                    <span class="Item">rem:</span>
+                                    <span class="Descripcion">vmax: viewport maximum. Es similar a la anterior, vmin, pero en este caso se toma el valor mayor.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <header>
+                        <h1>Fuentes web</h1>
+                        <p>Para implementar diferentes fuentes, vamos a utiliza la API de google que nos permite cargar familias de fuente desde un link que se inserta en el head de la pagina y despues podremos utilizarla con el comando font-family desde css. A continuacion mostraremos tres tipos de fuente:</p>
+                        <ul>
+                            <li>
+                                <h4>Anton</h4>
+                                <p class="Anton">Lorem ipsum dolor sit amet.</p>
+                            </li>
+                            <li>
+                                <h4>Dancing Script</h4>
+                                <p class="DancingScript">Lorem ipsum dolor sit amet.</p>
+                            </li>
+                            <li>
+                                <h4>Pacifico</h4>
+                                <p class="Pacifico">Lorem ipsum dolor sit amet.</p>
+                            </li>
+                        </ul>
+                    </header>
+                </article>
+
+            </section>
+            
+            <section id="section-content">
+                <article>
+                    <header>
+                        <hgroup>
+                            <h1>Título del mensaje uno</h1>
+                            <h2>Subtítulo del mensaje uno</h2>
+                        </hgroup>
+                        <time datetime="2021-03-15" pubdate>Taller publicado el dìa 15-03-2021 </time>
+                    </header>
+                    Este es el texto de mi primer mensaje
+                    <figure>
+                        <img src="https://www.josemariagonzalez.es/wp-content/uploads/2018/03/OpenStack.png" width="600">
+                        <figcaption>
+                        Esta es la imagen del primer mensaje
+                        </figcaption>
+                    </figure>
+                    <footer>
+                    <p>comentarios (0)</p>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <hgroup>
+                            <h1>Título del mensaje dos</h1>
+                            <h2>Subtítulo del mensaje dos</h2>
+                        </hgroup>
+                        <time datetime="2021-03-12" pubdate>Taller publicado el dìa 15-03-2021 </time>
+                    </header>
+                    Este es el texto de mi segundo mensaje
+                    <footer>
+                    <p>comentarios (0)</p>
+                    </footer>
+                </article>
+            </section>
+            <aside id="aside-column">
+                <blockquote>Mensaje número uno</blockquote>
+                <blockquote>Mensaje número dos</blockquote>
+            </aside>
+            <footer id="footer-foot">
+            Derechos Reservados &copy; ACME 2021-2022
+            </footer>
+        </div>
+
+    </body>
+</html>
